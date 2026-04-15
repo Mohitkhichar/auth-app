@@ -1,0 +1,25 @@
+<div class="container">
+
+  <div class="card">
+
+    <h2>{{ isLogin ? 'Login' : 'Signup' }}</h2>
+
+    <input [(ngModel)]="formData.username" placeholder="Username">
+
+    <input [(ngModel)]="formData.password" type="password" placeholder="Password">
+
+    <div class="error" *ngIf="errorMsg">
+      {{ errorMsg }}
+    </div>
+
+    <button (click)="submit()">
+      {{ isLogin ? 'Login' : 'Signup' }}
+    </button>
+
+    <p class="switch" (click)="toggleMode()">
+      {{ isLogin ? 'Create account' : 'Already have account?' }}
+    </p>
+
+  </div>
+
+</div>

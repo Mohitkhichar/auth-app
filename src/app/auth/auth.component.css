@@ -1,0 +1,41 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.card {
+  width: 320px;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #667eea;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.switch {
+  margin-top: 10px;
+  color: blue;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
